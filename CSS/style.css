@@ -140,62 +140,70 @@ transition: 0.3s ease-in-out;
     color:white;
 }
 
- /* media queries 768px*/
- @media (max-width:768px){
-   .navbar h3{
-    margin-left:10rem;
-    font-size:1.8rem;
-    text-decoration: underline;
-   }
+/* about section */
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
-.home{
-    grid-template-columns: 1fr;
-    place-content: center;
-    place-items: center;
+.about-img,
+.about-text {
+    flex: 1;
 }
-.button{
-    place-self: center;
-    margin-left: 12rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-.flex-wrap{
+
+
+ /* media queries 768px*/
+ @media (max-width:768px) {
+
+     /* Navbar */
+     .navbar h3 {
+         text-align: center;
+         margin: 0;
+         font-size: 1.5rem;
+     }
+
+     /* home Grid */
+     .home {
+         grid-template-columns: 1fr;
+         text-align: center;
+     }
+
+     /* button */
+     .button {
+         margin: 1rem auto;
+         display: block;
+     }
+
+     .button2 {
+         margin: 1rem auto;
+         display: block;
+     }
+
+     /* about */
+.about-row {
+    display: flex;
     flex-direction: column;
 }
-.about-img{
-width:100vw;
-}
-.about-img img {
-    object-fit: cover;
-    border-radius:1.5rem;
-    width: 130%;
-    height:50%;
-    box-shadow: 1px 1px 5px 3px rgb(233, 178, 221);
-    margin-left: 8.5rem;
-    cursor: pointer;
 
-}
-.about-text{
-    margin: auto;
-}
-.about-text p{
-    display:inline-block;
-}
-.button2{
-    margin-left:7rem;
-}
+    .about-text {
+        text-align: center;
+    }
+/* form  */
+     input,
+     select {
+         width: 100%;
+     }
 
-#packages-container {
-        display: grid;
-    grid-template-columns: 1fr !important;
-}
- .package {
-     width: 100% !important;
-        margin-left: 0 !important;
- }
- }
+ /* package grid */
+     #packages-container {
+         grid-template-columns: 1fr;
+     }
 
-
+     .package {
+         width: 100%;
+     }
+    }
  /* media query  */
  @media (min-width: 768px) {
      .nav-item.dropdown:hover .dropdown-menu {
