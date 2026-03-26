@@ -34,7 +34,9 @@ Add search/filter for destinations
 Integrate real travel APIs
 
 🙌 Acknowledgement
-This project was built as part of my frontend development learning journey.
+<practise project 1>
+This project is part of my learning and practise journey therefore it might be 
+inapproprite or improper.
 
 ⭐ Show your support
 If you like this project, consider giving it a ⭐ on GitHub!
