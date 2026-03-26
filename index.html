@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <!-- navbar section -->
+   <header>
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand fst-italic fw-bold  " href="#index.html"><h3>Destination Paradise</h3></a>
+   
+    <div class="d-none d-md-block">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5  d-flex flex-row ">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="#packages">Home</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Destinations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Beach Gateway</a></li>
+            <li><a class="dropdown-item" href="#">Mountain Adventure</a></li>
+            <li><a class="dropdown-item" href="#">City Life Experience</a></li>
+            <li><a class="dropdown-item" href="#">More</a></li>
+
+          </ul>
+
+        </li>
+        <li>
+         <a class="nav-link" href="#about">About</a></li>
+
+      </ul>
+      </div>
+      <div class="d-flex" role="search">
+        <input id="searchInput" class="form-control me-2 search1" type="search" placeholder="Search" aria-label="Search"/>
+      </div>
+    </div>
+  </div>
+</nav>
+   </header>
+
+  <!-- carousel section -->
+   <section>
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/Img1.jpg" class="d-block w-75  mx-auto" alt="Beach Gateway">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Img2.jpg" class="d-block w-75 mx-auto" alt="Mountain adventure">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/img3.jpg" class="d-block w-75 mx-auto" alt="city life experience">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/image4.jpg" class="d-block w-75 mx-auto" alt="cariana beach">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/image5.jpg" class="d-block w-75 mx-auto" alt="mariana beach">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev previous-slide" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next next-slide" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"></div>
+     </section>        
+         
+        
+
+          <!--booking form section  -->
+      <div class="home w-80 mx-5 mt-5" id="home">
+        <div id="packages" class="home-form-section ">
+          
+          <h3 class="form-title text-center h3">Book Your Dream Vacation</h3>
+          <form id="bookingForm">
+
+        <label  for="name" class="form-label mt-2">First name</label>
+    <input id="name" type="text" class="form-control" required>
+            
+    <label for="email" class="form-label mt-2">Email</label>
+    <input  type="email" class="form-control" id="email" required>
+
+    <label  for="phone" class="form-label mt-2">Phone Number</label>
+    <div class="input-group">
+    <select class="form-select" id="countryCode" style="max-width:140px;"></select>
+    <input  type="number" class="form-control" id="phone" required>
+</div>
+<p id="phone-error" style="color: red;display: none;font-size:0.8rem;"> Please enter a valid 10-digit phone number</p>
+
+    <label for="birthdate" class="form-label mt-2">Birth Date</label>
+    <input type="date" class="form-control" id="birthday" required>
+<p id="age-error" style="color: red;display:none ;font-size: 0.8rem;">  You must be at least 18 years old.</p>
+
+
+    <label class="form-label mt-2">Marital Status</label>
+    <br>
+    <select  class="form-select" id="maritalStatus" value="marital status" required>
+            <option value="select"disabled selected>Select</option>
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+    </select>    
+  <p id="greet" style="color:darkmagenta;display:none;">Thanks for your interest, our tour experts will get back to
+you shorty!</p>
+    <button class="btn btn-primary btn-md button w-25 mt-4" type="submit" value="Submit" required>submit </button>
+   
+  </form>
+      </div>
+
+   <div class="line me-5"></div>
+
+<!-- travel package section -->
+        <div class="home-packages-section mt-3">
+          <h2 class="section-title text-center mb-5">Explore Our Travel Packages</h2>
+          <div class="packages-container " id="packages-container">
+                       </div>
+      </div>
+      </div>
+
+<!-- about section -->
+ <footer>
+      <div class="about-container mt-3 w-90 mb-5" id="about">
+      <h2 for="about" class="text-center h2 fw-1">About Us</h2>
+      <div class="d-flex  flex-wrap">
+      <div class="about-img w-50 ">
+<img src="Images/img6.jpg" class=" mt-5">
+</div>
+      <div class="about-text w-50  mt-5">
+ <h3 class="text-center mt-3 me-5">Welcome to Destination Paradise</h3>
+ <p class="mt-3 text-center mt-1 me-5">Destination Paradise is your ultimate gateway to the world's most breathtaking locations. 
+  We specialize in crafting personalized travel experiences that turn your dream vacations into lifelong memories. From serene beaches to majestic mountains, we handle every detail so you can focus on the journey.</p>
+ <button class="btn btn-large button2 mt-3 ">Learn More</button>
+ </div>
+ </div>
+    </div>  
+    </footer>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/Js/script.js"></script>
+</body>
+</html>
